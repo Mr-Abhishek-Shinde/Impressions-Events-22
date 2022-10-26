@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(6, 4, 58);
+    background: url(/images/bgimg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* #holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+} */
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftContainer{
+    height: 100vh;
+    width: 23%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(37, 37, 37); */
+}
+
+.rightContainer{
+    width: 77%;
+    margin-left: 23%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(32, 30, 30); */
+    padding: 100px;
+}
+
+.rightContainer>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.titleText {
+    position: relative;
+    top: -10vh;
+    margin: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    line-height: 80px;
+    background: url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg');
+    background-size: auto 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+    from {
+        background-position: center 0;
+    }
+
+    to {
+        background-position: center 200%;
+    }
+}
+
+.leftContainer a{
+    text-decoration: none;
+}
+
+.leftContainer ul li{
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 50px 2px;
+    cursor: pointer;
+}
+
+.leftContainer ul li:after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: -30%;
+    width: 140%;
+    border-top: 2px solid rgba(255, 255, 255, 0.474);
+}
+
+.leftContainer ul li.active, .leftContainer ul li:hover{
+    color: red;
+}
+
+.modTitle{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-top: 25px;
+}
+
+
+.card .cardContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background: repeating-linear-gradient(135deg, #f6d900, red 1px, #d4cd96); */
+    height: 400px;
+    width: 300px;
+    margin: 40px 25px 100px 20px;
+    background: url(/images/Page4.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.card .cardContent h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cardContent img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 60%;
+}
+
+.cardContent div {
+    font-size: 18px;
+    position: relative;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+}
