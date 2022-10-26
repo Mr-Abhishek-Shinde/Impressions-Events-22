@@ -7,7 +7,7 @@
 
 body {
     background-color: rgb(6, 4, 58);
-    background: url(images/bgimg2.jpg);
+    background: url(/images/bgimg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -129,7 +129,7 @@ h1.titleText {
     height: 400px;
     width: 300px;
     margin: 40px 25px 100px 20px;
-    background: url(images/Page4.svg);
+    background: url(/images/Page4.svg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
