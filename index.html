@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cssFiles/bg_style.css">
     <link rel="stylesheet" href="cssFiles/preloader.css">
+    <link rel="stylesheet" href="cssFiles/bg_style.css">
+    <link rel="stylesheet" href="cssFiles/popup_slider.css">
 </head>
 
 <body>
     <div id="holder"></div>
     <div id="preloadLeft" class="hiding hide">
         <div class="backdrop"></div>
-        <img id="fest_logo" src="only_logo-1.png" alt="F">
+        <img id="fest_logo" src="images/only_logo-1.png" alt="F">
         <div class="stage_highlight"></div>
         <div class="spotlight_swivel">
             <div class="lamp"></div>
@@ -23,21 +24,37 @@
         <div class="stage_floor"></div>
     </div>
 
+    <script>
+        var preeloader = document.getElementById("preloadLeft");
+
+        window.addEventListener("load", function () {
+            preeloader.style.display = "none";
+        })
+    </script>
+
     <main>
         <div class="leftContainer" id="blur1">
             <h1 class="titleText">EVENTS</h1>
             <div class="modules">
                 <nav>
                     <ul>
-                        <a href="#drama"><li onclick="changeSection1()">Drama</li></a>
-                        <a href="#dance"><li onclick="changeSection2()">Dance</li></a>
-                        <a href="#music"><li onclick="changeSection3()">Music</li></a>
-                        <a href="#anc"><li onclick="changeSection4()">Art and Craft</li></a>
+                        <a href="#drama">
+                            <li onclick="changeSection1()">Drama</li>
+                        </a>
+                        <a href="#dance">
+                            <li onclick="changeSection2()">Dance</li>
+                        </a>
+                        <a href="#music">
+                            <li onclick="changeSection3()">Music</li>
+                        </a>
+                        <a href="#anc">
+                            <li onclick="changeSection4()">Art and Craft</li>
+                        </a>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="rightContainer"  id="blur2">
+        <div class="rightContainer" id="blur2">
             <h1 class="modTitle">The Drama Module</h1>
             <div class="drama" id="drama">
                 <div class="card">
@@ -110,6 +127,117 @@
         </div>
         <div id="popup">
             <h1 class="after" onclick="togglePopup()">+</h1>
+
+            <div class="container">
+                <div class="slider">
+
+                    <div class="box1 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>DETAILS</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                diam, ac mattis orci pellentesque eget.
+                            </p>
+                            <!-- <button>Check Now</button> -->
+                        </div>
+
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="box2 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>STRUCTURE</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                diam, ac mattis orci pellentesque eget.
+                            </p>
+                            <!-- <button>Check Now</button> -->
+                        </div>
+
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+                    <div class="box3 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>RULES</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                diam, ac mattis orci pellentesque eget.
+                            </p>
+                            <!-- <button>Check Now</button> -->
+                        </div>
+
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+                    <div class="box4 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>CONTACT US</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                diam, ac mattis orci pellentesque eget.
+                            </p>
+                            <!-- <button>Check Now</button> -->
+                        </div>
+
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+                    <div class="box5 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>MORE INFO</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                diam, ac mattis orci pellentesque eget.
+                            </p>
+                            <!-- <button>Check Now</button> -->
+                        </div>
+
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91">
+                    <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)"
+                        fill="#fff" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91">
+                    <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)"
+                        fill="#fff" />
+                </svg>
+                <div class="trail">
+                    <div class="box1 active">Details</div>
+                    <div class="box2">Structure</div>
+                    <div class="box3">Rules</div>
+                    <div class="box4">Contact</div>
+                    <div class="box5">More Info</div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="popup">
+            <h1 class="after" onclick="togglePopup()">+</h1>
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut odio autem quia, iure qui vitae
                 asperiores ullam iste necessitatibus.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptate corporis officiis saepe vel, quam
@@ -117,20 +245,13 @@
                 alias, quis perferendis odio rem eligendi ad vitae. Ode eligendi dolores
                 ratione vero libero temporibus expedita reprehenderit?</p>
             <a href="#">Register</a>
-        </div>
+        </div> -->
     </main>
 
-    <!-- <script src="bgAnimation.js"></script> -->
-
-    <script>
-        var preeloader = document.getElementById("preloadLeft");
-
-        window.addEventListener("load", function () {
-            preeloader.style.display = "none";
-        })
-    </script>
-
-    <script src="poppup.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <script src="jsFiles/slider.js"></script>
+    <script src="jsFiles/poppup.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url("Page1.svg");
+    background-image: url("../images/Page1.svg");
     background-size: cover;
     z-index: 10000;
 }

@@ -178,7 +178,7 @@ h1.titleText {
     transform: translate(-50%, -50%);
     width: 80vw;
     height: 80vh;
-    padding: 50px;
+    /* padding: 50px; */
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     background: white;
     color: white;
