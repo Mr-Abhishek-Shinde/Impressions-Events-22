@@ -61,7 +61,7 @@ main{
 
 h1.titleText {
     position: relative;
-    top: -10vh;
+    top: -8vh;
     margin: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 80px;
@@ -89,13 +89,48 @@ h1.titleText {
     text-decoration: none;
 }
 
+.leftContainer ul{
+    list-style: none;
+    padding-left: 35px;
+    position: relative;
+}
+
+.leftContainer ul:after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 0px;
+    top: 0;
+    background: white;
+}
+
+.leftContainer ul a li::before{
+    content: "";
+    position: absolute;
+    background: black;
+    width: 12px;
+    height: 12px;
+    left: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+.leftContainer ul a li.active{
+    font-size: 28px;
+}
+
+
 .leftContainer ul li{
     position: relative;
     color: white;
     font-size: 25px;
     font-weight: 700;
     padding: 5px;
-    margin: 30px 2px;
+    margin: 35px 2px;
     cursor: pointer;
 }
 
@@ -105,11 +140,19 @@ h1.titleText {
     bottom: -5px;
     left: -30%;
     width: 140%;
-    border-top: 2px solid rgba(255, 255, 255, 0.474);
+    /* border-top: 2px solid rgba(255, 255, 255, 0.474); */
 }
 
 .leftContainer ul li.active, .leftContainer ul li:hover{
     color: red;
+}
+
+.leftContainer ul li.active{
+    font-size: 28px;
+}
+
+.leftContainer ul a li.active::before{
+    background: red;
 }
 
 .modTitle{
