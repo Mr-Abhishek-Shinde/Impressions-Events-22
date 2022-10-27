@@ -99,9 +99,9 @@ h1.titleText {
     content: "";
     position: absolute;
     width: 3px;
-    height: 100%;
+    height: 95%;
     left: 0px;
-    top: 0;
+    top: 2.5%;
     background: white;
 }
 
