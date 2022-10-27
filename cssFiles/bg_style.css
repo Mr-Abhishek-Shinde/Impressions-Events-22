@@ -157,7 +157,7 @@ h1.titleText {
 }
 
 .leftContainer ul li.active, .leftContainer ul li:hover{
-    color: red;
+    color: rgb(255, 102, 0);
 }
 
 .leftContainer ul li.active{
@@ -165,7 +165,7 @@ h1.titleText {
 }
 
 .leftContainer ul a li.active::before{
-    background: red;
+    background: rgb(255, 102, 0);
 }
 
 .modTitle{
