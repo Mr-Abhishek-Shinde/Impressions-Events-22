@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: rgb(6, 4, 58);
-    background: url(../images/bgimg2.jpg);
+    background-color: rgb(231, 231, 255);
+    background: url(../images/bgimg1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -100,6 +100,7 @@ h1.titleText {
 }
 
 .leftContainer ul{
+    width: min-content;
     list-style: none;
     padding-left: 35px;
     position: relative;
@@ -189,10 +190,10 @@ h1.titleText {
     background: url(../images/Page4.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 15px;
     border: 2px solid black;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.7s ease;
+    padding: 10px;
 }
 
 .cardContent:hover{
@@ -209,7 +210,7 @@ h1.titleText {
 }
 
 .cardContent img {
-    border-radius: 15px 15px 0 0;
+    /* border-radius: 15px 15px 0 0; */
     width: 100%;
     height: 65%;
 }
@@ -369,4 +370,26 @@ h1.titleText {
         height: 380px;
         width: 270px;
     }
+}
+
+/* scrollbar */
+
+
+
+body::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #2b0606;
+	border: 1px solid #210e0e;
 }
