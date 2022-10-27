@@ -95,7 +95,7 @@ h1.titleText {
     font-size: 25px;
     font-weight: 700;
     padding: 5px;
-    margin: 50px 2px;
+    margin: 30px 2px;
     cursor: pointer;
 }
 
@@ -128,11 +128,18 @@ h1.titleText {
     /* background: repeating-linear-gradient(135deg, #f6d900, red 1px, #d4cd96); */
     height: 400px;
     width: 300px;
-    margin: 40px 25px 100px 20px;
+    margin: 40px 25px 30px 20px;
     background: url(../images/Page4.svg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+}
+
+.cardContent:hover{
+    transform: scale(1.08);
 }
 
 .card .cardContent h2 {
@@ -141,12 +148,13 @@ h1.titleText {
     padding: 5px;
     font-size: 25px;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .cardContent img {
     border-radius: 15px 15px 0 0;
     width: 100%;
-    height: 60%;
+    height: 65%;
 }
 
 .cardContent div {
@@ -154,11 +162,16 @@ h1.titleText {
     position: relative;
     padding: 10px 25px;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 10px;
     text-decoration: none;
     color: #fff;
     background: #111;
     cursor: pointer;
+}
+
+.cardContent div:hover{
+    color: red;
+    
 }
 
 
