@@ -148,7 +148,7 @@ h1.titleText {
 }
 
 .leftContainer ul li.active{
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .leftContainer ul a li.active::before{

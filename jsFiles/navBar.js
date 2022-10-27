@@ -9,3 +9,4 @@ allItems.forEach(item => {
         this.classList.add("active");
     })
 })
+
