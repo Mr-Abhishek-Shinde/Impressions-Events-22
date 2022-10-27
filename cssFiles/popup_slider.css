@@ -270,5 +270,14 @@
     top: 25px;
     font-size: 40px;
     font-family: cursive;
-    color: aqua;
+    color: transparent;
+    background: url(../images/Page4.svg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1300px) {
+    
 }

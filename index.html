@@ -8,6 +8,7 @@
     <title>Events | Impressions'22 | COEP Tech</title>
     <link rel="stylesheet" href="cssFiles/preloader.css">
     <link rel="stylesheet" href="cssFiles/bg_style.css">
+    <link rel="stylesheet" href="cssFiles/goToTop.css">
     <link rel="stylesheet" href="cssFiles/popup_slider.css">
 </head>
 
@@ -33,6 +34,9 @@
     </script>
 
     <main>
+        <div class="top" id="scrollbtn" onclick="scrollToTop()">
+            <img src="images/arrow-top.png" alt="" class="arrowTop">
+        </div>
         <div class="leftContainer" id="blur1">
             <h1 class="titleText">EVENTS</h1>
             <div class="modules">
@@ -62,204 +66,216 @@
         </div>
         <div class="rightContainer" id="blur2">
 
-            <p class="m4nav" id="m1"></p>
-            <h1 class="modTitle">The Dance Module</h1>
-            <div class="dance" id="dance">
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>So-Duet</h2>
-                        <div onclick="togglePopup(this.id)" id="SD">Read More</div>
+            <div class="danceContainer">
+                <p class="m4nav" id="m1"></p>
+                <h1 class="modTitle">The Dance Module</h1>
+                <div class="dance" id="dance">
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>So-Duet</h2>
+                            <div onclick="togglePopup(this.id)" id="SD">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Street Forward</h2>
-                        <div onclick="togglePopup(this.id)" id="SF">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Street Forward</h2>
+                            <div onclick="togglePopup(this.id)" id="SF">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Swa(g)Desi</h2>
-                        <div onclick="togglePopup(this.id)" id="SW">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Swa(g)Desi</h2>
+                            <div onclick="togglePopup(this.id)" id="SW">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Nrityangana</h2>
-                        <div onclick="togglePopup(this.id)" id="NG">Read More</div>
-                    </div>
-                </div>
-            </div>
-
-            <p class="m4nav" id="m2"></p>
-            <h1 class="modTitle">The Drama Module</h1>
-            <div class="drama" id="drama">
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Limelight</h2>
-                        <div onclick="togglePopup(this.id)" id="LL">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Artiskit</h2>
-                        <div onclick="togglePopup(this.id)" id="AS">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Suno Suno</h2>
-                        <div onclick="togglePopup(this.id)" id="SS">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Nrityangana</h2>
+                            <div onclick="togglePopup(this.id)" id="NG">Read More</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <p class="m4nav" id="m3"></p>
-            <h1 class="modTitle">The Arts-and-Crafts Module</h1>
-            <div class="anc" id="anc">
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Doodly Doo</h2>
-                        <div onclick="togglePopup()">Read More</div>
+            <div class="dramaContainer">
+                <p class="m4nav" id="m2"></p>
+                <h1 class="modTitle">The Drama Module</h1>
+                <div class="drama" id="drama">
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Limelight</h2>
+                            <div onclick="togglePopup(this.id)" id="LL">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Cirकला</h2>
-                        <div onclick="togglePopup()">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Artiskit</h2>
+                            <div onclick="togglePopup(this.id)" id="AS">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Game of Shades</h2>
-                        <div onclick="togglePopup()">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Color Splash</h2>
-                        <div onclick="togglePopup()">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Graphix</h2>
-                        <div onclick="togglePopup()">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Suno Suno</h2>
+                            <div onclick="togglePopup(this.id)" id="SS">Read More</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <p class="m4nav" id="m4"></p>
-            <h1 class="modTitle">The Camera Module</h1>
-            <div class="camera" id="camera">
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Box Office</h2>
-                        <div onclick="togglePopup()">Read More</div>
+            <div class="ancContainer">
+                <p class="m4nav" id="m3"></p>
+                <h1 class="modTitle">The Arts-and-Crafts Module</h1>
+                <div class="anc" id="anc">
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Doodly Doo</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Lens Art</h2>
-                        <div onclick="togglePopup()">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Cirकला</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <p class="m4nav" id="m5"></p>
-            <h1 class="modTitle">The Music Module</h1>
-            <div class="music" id="music">
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Battle of DJ's</h2>
-                        <div onclick="togglePopup()">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Game of Shades</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Saavani</h2>
-                        <div onclick="togglePopup()">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Color Splash</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Stay Tuned</h2>
-                        <div onclick="togglePopup()">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Poona-05</h2>
-                        <div onclick="togglePopup()">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>High Current</h2>
-                        <div onclick="togglePopup()">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Graphix</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <p class="m4nav" id="m6"></p>
-            <h1 class="modTitle">The Shoutout Module</h1>
-            <div class="shoutout" id="shoutout">
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Andaaz-E-Ba</h2>
-                        <div onclick="togglePopup()">Read More</div>
+            <div class="cameraContainer">
+                <p class="m4nav" id="m4"></p>
+                <h1 class="modTitle">The Camera Module</h1>
+                <div class="camera" id="camera">
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Box Office</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Tale Teller</h2>
-                        <div onclick="togglePopup()">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>ComiKing</h2>
-                        <div onclick="togglePopup()">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Vers-atile</h2>
-                        <div onclick="togglePopup()">Read More</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardContent">
-                        <img src="images/m2.jpg" alt="">
-                        <h2>Anecdote</h2>
-                        <div onclick="togglePopup()">Read More</div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Lens Art</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
+            <div class="musicContainer">
+                <p class="m4nav" id="m5"></p>
+                <h1 class="modTitle">The Music Module</h1>
+                <div class="music" id="music">
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Battle of DJ's</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Saavani</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Stay Tuned</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Poona-05</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>High Current</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shoutoutContainer">
+                <p class="m4nav" id="m6"></p>
+                <h1 class="modTitle">The Shoutout Module</h1>
+                <div class="shoutout" id="shoutout">
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Andaaz-E-Ba</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Tale Teller</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>ComiKing</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Vers-atile</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardContent">
+                            <img src="images/m2.jpg" alt="">
+                            <h2>Anecdote</h2>
+                            <div onclick="togglePopup()">Read More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div id="popup">
             <h1 class="after" onclick="togglePopup()">+</h1>
@@ -395,6 +411,7 @@
 
     <script src="jsFiles/navBar.js"></script>
     <script src="jsFiles/poppup.js"></script>
+    <script src="jsFiles/scrolup.js"></script>
     <script src="jsFiles/slider.js"></script>
 </body>
 
