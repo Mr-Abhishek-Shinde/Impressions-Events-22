@@ -7,11 +7,11 @@ function togglePopup(id) {
     popup.classList.toggle('active')
     var scrollbtn = document.getElementById('scrollbtn');
     scrollbtn.classList.toggle('active')
-
+    var bodyScroll = document.querySelector("body");
+    bodyScroll.classList.toggle('popupActive')
 
 
     var EveName = document.getElementById("EveName")
-
 
     switch (id) {
         case "SF":

@@ -581,3 +581,8 @@ p.lastLine{
         margin-bottom: 25px;
     }
 }
+
+/* disabling scrolling when popup is visible */
+body.popupActive{
+    overflow: hidden;
+}

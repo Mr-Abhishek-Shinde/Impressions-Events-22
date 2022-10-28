@@ -286,6 +286,11 @@
         position: relative;
         top: 70px;
     }
+
+
+    .slider .box .details {
+        padding: 100px 70px 130px 70px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -337,9 +342,8 @@
 
     }
 
-
     .slider .box .details {
-        padding: 130px 70px;
+        padding: 75px 70px 130px 70px;
     }
 
 }
@@ -354,11 +358,22 @@
     .next {
         width: 25px;
     }
+
+    .slider .box .details {
+        padding: 70px 70px 130px 70px;
+    }
 }
 
 @media (max-width: 450px) {
     .slider .illustration {
         position: relative;
         top: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider .illustration {
+        position: relative;
+        top: 50px;
     }
 }
