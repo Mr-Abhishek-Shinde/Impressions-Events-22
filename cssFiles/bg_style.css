@@ -70,7 +70,7 @@ main{
 
 h1.titleText {
     position: absolute;
-    top: 6vh;
+    top: 5vh;
     left: 4vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 80px;
@@ -93,8 +93,8 @@ h1.titleText {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: -30px;
-    bottom: -40px;
+    left: -40px;
+    bottom: -30px;
 }
 
 .coepLogo{
@@ -127,16 +127,16 @@ h1.titleText {
     list-style: none;
     padding-left: 35px;
     position: relative;
-    top: 0vh;
+    top: -3vh;
 }
 
 .leftContainer ul:after{
     content: "";
     position: absolute;
     width: 3px;
-    height: 95%;
+    height: 92%;
     left: 0px;
-    top: 2.5%;
+    top: 4%;
     background: white;
 }
 
