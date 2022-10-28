@@ -86,6 +86,28 @@ h1.titleText {
     animation: shine 8s linear infinite;
 }
 
+.logos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -30px;
+    bottom: -40px;
+}
+
+.coepLogo{
+    width: 220px;
+    height: 220px;
+}
+
+.impressLogo{
+    width: 105px;
+    height: 170px;
+    margin-left: -20px;
+}
+
 @keyframes shine {
     from {
         background-position: center 0;
@@ -105,7 +127,7 @@ h1.titleText {
     list-style: none;
     padding-left: 35px;
     position: relative;
-    top: 5vh;
+    top: 0vh;
 }
 
 .leftContainer ul:after{
@@ -133,18 +155,17 @@ h1.titleText {
 }
 
 .leftContainer ul a li.active{
-    font-size: 28px;
+    font-size: 25px;
 }
-
 
 .leftContainer ul li{
     position: relative;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
     padding: 5px;
-    margin: 35px 2px;
+    margin: 25px 2px;
     cursor: pointer;
 }
 
@@ -159,10 +180,6 @@ h1.titleText {
 
 .leftContainer ul li.active, .leftContainer ul li:hover{
     color: rgb(255, 102, 0);
-}
-
-.leftContainer ul li.active{
-    font-size: 26px;
 }
 
 .leftContainer ul a li.active::before{
@@ -351,10 +368,19 @@ h1.titleText {
 
     h1.titleText {
         position: absolute;
-        top: 12vh;
+        top: 8vh;
         left: 0;
         width: 100%;
         text-align: center;
+    }
+
+    .leftContainer ul li{
+        font-size: 22px;
+        margin: 20px 2px;
+    }
+
+    .leftContainer ul a li.active{
+        font-size: 24px;
     }
 
     .modTitle{
