@@ -296,7 +296,7 @@
 @media (max-width: 600px) {
     .slider .illustration {
         position: relative;
-        top: 15px;
+        top: -25px;
     }
 
     .EveName {
@@ -317,12 +317,20 @@
         bottom: 2%;
         width: 70%;
         font-size: 15px;
-        gap: 2rem;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
     .trail div {
-        padding: 0.7rem 0;
+        padding: 0;
+        width: 15px;
+        border-top: 4px solid #fff;
+        font-size: 1px;
+        margin-bottom: 10px;
+        color: transparent;
     }
 
     .slider .box .bg {
@@ -351,7 +359,7 @@
 @media (max-width: 520px) {
     .slider .illustration {
         position: relative;
-        top: 25px;
+        top: -40px;
     }
 
     .prev,
@@ -362,18 +370,31 @@
     .slider .box .details {
         padding: 70px 70px 130px 70px;
     }
+
+    .slider .box .details h1 {
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .slider .box .details p {
+        font-size: 19px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+
+    }
 }
 
 @media (max-width: 450px) {
     .slider .illustration {
         position: relative;
-        top: 35px;
+        top: -30px;
     }
 }
 
 @media (max-width: 400px) {
     .slider .illustration {
         position: relative;
-        top: 50px;
+        top: 15px;
     }
 }
