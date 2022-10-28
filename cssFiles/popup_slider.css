@@ -51,7 +51,7 @@
 
 .slider .box .details p {
     display: inline-block;
-    font-size: 24px;
+    font-size: 22px;
     color: #b5b4b4;
     margin-bottom: 1rem;
     margin-right: 1rem;
@@ -130,13 +130,13 @@
     transition: all 0.5s ease;
 }
 
-@media only screen and (max-width: 650px) {
+/* @media only screen and (max-width: 650px) {
 
     .prev,
     .next {
         display: none;
     }
-}
+} */
 
 .prev:hover,
 .next:hover {
@@ -228,7 +228,7 @@
     }
 
     .slider .box .details p {
-        font-size: 23px;
+        font-size: 21px;
         margin-bottom: 0.7rem;
         margin-right: 0.7rem;
     }
@@ -249,4 +249,116 @@
     }
 }
 
-@media (max-width: 900px) {}
+@media (max-width: 900px) {
+    #popup {
+        width: 95vw;
+        height: 95vh;
+    }
+
+    .slider .box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .slider .illustration {
+        position: relative;
+        top: 50px;
+    }
+
+    .slider .illustration div {
+        height: 15rem;
+        width: 14rem;
+    }
+
+    .slider .illustration a {
+        padding: 12px 25px;
+        margin-top: 5px;
+    }
+
+    #popup a {
+        padding: 12px 25px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .slider .illustration {
+        position: relative;
+        top: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider .illustration {
+        position: relative;
+        top: 15px;
+    }
+
+    .EveName {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: 0;
+        top: 15px;
+        font-size: 40px;
+    }
+
+    .prev,
+    .next {
+        width: 28px;
+    }
+
+    .trail {
+        bottom: 2%;
+        width: 70%;
+        font-size: 15px;
+        gap: 2rem;
+
+    }
+
+    .trail div {
+        padding: 0.7rem 0;
+    }
+
+    .slider .box .bg {
+        visibility: hidden;
+    }
+
+    .slider .box .details h1 {
+        font-size: 38px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .slider .box .details p {
+        font-size: 20px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+
+    }
+
+
+    .slider .box .details {
+        padding: 130px 70px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .slider .illustration {
+        position: relative;
+        top: 25px;
+    }
+
+    .prev,
+    .next {
+        width: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .slider .illustration {
+        position: relative;
+        top: 35px;
+    }
+}
