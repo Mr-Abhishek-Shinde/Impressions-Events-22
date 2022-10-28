@@ -26,6 +26,7 @@ body {
 main{
     display: flex;
     flex-direction: row;
+    user-select: none;
 }
 
 .leftContainer{

@@ -108,6 +108,7 @@
     color: #b5b4b4;
     margin-bottom: 2rem;
     margin-right: 5rem;
+    user-select: text;
 }
 @media only screen and (max-width: 800px) {
     .slider .box .details p {
