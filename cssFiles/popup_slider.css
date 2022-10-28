@@ -12,7 +12,7 @@
 }
 .slider {
     display: flex;
-    width: 500%;
+    width: 400%;
     height: 100%;
     transition: all 0.25s ease-in;
     transform: translateX(0);
@@ -209,7 +209,7 @@
     width: 2rem;
     cursor: pointer;
     opacity: 0.4;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 @media only screen and (max-width: 650px) {
     .prev, .next {
@@ -235,7 +235,7 @@
     transform: translateX(-50%);
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     text-align: center;
     font-size: 1rem;
@@ -251,7 +251,7 @@
     border-top: 3px solid #fff;
     cursor: pointer;
     opacity: 0.3;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .trail div:hover {
     opacity: 0.8;

@@ -8,7 +8,7 @@ let value = 0
 // trail index number
 let trailValue = 0
 // interval (Duration)
-let interval = 100000
+let interval = 600000
 
 // Function to slide forward
 const slide = (condition) => {
@@ -29,7 +29,7 @@ const initiateINC = () => {
     // Remove active from all trails
     trail.forEach(cur => cur.classList.remove("active"))
     // increase transform value
-    value === 80 ? value = 0 : value += 20
+    value === 75 ? value = 0 : value += 25
     // update trailValue based on value
     trailUpdate()
 }
@@ -39,7 +39,7 @@ const initiateDEC = () => {
      // Remove active from all trails
     trail.forEach(cur => cur.classList.remove("active"))
     // decrease transform value
-    value === 0 ? value = 80 : value -= 20
+    value === 0 ? value = 75 : value -= 25
      // update trailValue based on value
     trailUpdate()
 }
@@ -52,11 +52,10 @@ const move = (S, T) => {
     trail[T].classList.add("active")
 }
 
-const tl = gsap.timeline({defaults: {duration: 0.6, ease: "power2.inOut"}})
+const tl = gsap.timeline({defaults: {duration: 0.7, ease: "power2.inOut"}})
 tl.from(".bg", {x: "-100%", opacity: 0})
-  .from("p", {opacity: 0}, "-=0.3")
-  .from("h1", {opacity: 0, y: "30px"}, "-=0.3")
-  .from("button", {opacity: 0, y: "-40px"}, "-=0.8")
+  .from(".details>p", {opacity: 0}, "-=0.4")
+  .from(".details>h1", {opacity: 0, y: "50px"}, "-=0.5")
 
 // function to restart animation
 const animate = () => tl.restart()
@@ -65,14 +64,12 @@ const animate = () => tl.restart()
 const trailUpdate = () => {
     if (value === 0) {
         trailValue = 0
-    } else if (value === 20) {
+    } else if (value === 25) {
         trailValue = 1
-    } else if (value === 40) {
+    } else if (value === 50) {
         trailValue = 2
-    } else if (value === 60) {
+    } else{
         trailValue = 3
-    } else {
-        trailValue = 4
     }
 }   
 
@@ -100,13 +97,12 @@ const clickCheck = (e) => {
     if(check.classList.contains("box1")) {
         value = 0
     } else if (check.classList.contains("box2")) {
-        value = 20
+        value = 25
     } else if (check.classList.contains("box3")) {
-        value = 40
-    } else if (check.classList.contains("box4")) {
-        value = 60
-    } else {
-        value = 80
+        value = 50
+    }
+    else {
+        value = 75
     }
     // update trail based on value
     trailUpdate()
