@@ -21,3 +21,7 @@
     width: 18px;
     height: 15px;
 }
+
+#scrollbtn.active{
+    visibility: hidden;
+}
