@@ -23,13 +23,13 @@ body {
     z-index: -100;
 } */
 
-main{
+main {
     display: flex;
     flex-direction: row;
     user-select: none;
 }
 
-.leftContainer{
+.leftContainer {
     height: 100vh;
     width: 27%;
     position: fixed;
@@ -40,7 +40,7 @@ main{
     /* background-color: rgb(37, 37, 37); */
 }
 
-.rightContainer{
+.rightContainer {
     width: 73%;
     margin-left: 27%;
     display: flex;
@@ -52,7 +52,7 @@ main{
     padding: 70px;
 }
 
-.rightContainer>div{
+.rightContainer>div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -60,7 +60,7 @@ main{
     justify-content: center;
 }
 
-.rightContainer>div>div{
+.rightContainer>div>div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -86,7 +86,7 @@ h1.titleText {
     animation: shine 8s linear infinite;
 }
 
-.logos{
+.logos {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -98,12 +98,12 @@ h1.titleText {
     margin-bottom: 25px;
 }
 
-.coepLogo{
+.coepLogo {
     width: 220px;
     height: 220px;
 }
 
-.impressLogo{
+.impressLogo {
     width: 135px;
     height: 170px;
     border-left: 2px solid rgb(112, 112, 112);
@@ -120,11 +120,11 @@ h1.titleText {
     }
 }
 
-.leftContainer a{
+.leftContainer a {
     text-decoration: none;
 }
 
-.leftContainer ul{
+.leftContainer ul {
     width: min-content;
     list-style: none;
     padding-left: 35px;
@@ -132,7 +132,7 @@ h1.titleText {
     top: -3vh;
 }
 
-.leftContainer ul:after{
+.leftContainer ul:after {
     content: "";
     position: absolute;
     width: 3px;
@@ -142,7 +142,7 @@ h1.titleText {
     background: white;
 }
 
-.leftContainer ul a li::before{
+.leftContainer ul a li::before {
     content: "";
     position: absolute;
     background: black;
@@ -156,11 +156,11 @@ h1.titleText {
     z-index: 1;
 }
 
-.leftContainer ul a li.active{
+.leftContainer ul a li.active {
     font-size: 25px;
 }
 
-.leftContainer ul li{
+.leftContainer ul li {
     position: relative;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -171,7 +171,7 @@ h1.titleText {
     cursor: pointer;
 }
 
-.leftContainer ul li:after{
+.leftContainer ul li:after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -180,24 +180,25 @@ h1.titleText {
     /* border-top: 2px solid rgba(255, 255, 255, 0.474); */
 }
 
-.leftContainer ul li.active, .leftContainer ul li:hover{
+.leftContainer ul li.active,
+.leftContainer ul li:hover {
     color: rgb(255, 102, 0);
 }
 
-.leftContainer ul a li.active::before{
+.leftContainer ul a li.active::before {
     background: rgb(255, 102, 0);
 }
 
-.modTitle{
+.modTitle {
     font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     margin-top: 25px;
-    text-shadow: 
-      2px 2px 0px #c8790af1;
+    text-shadow:
+        2px 2px 0px #c8790af1;
 }
 
-.m4nav{
+.m4nav {
     margin-bottom: 25px;
 }
 
@@ -220,7 +221,7 @@ h1.titleText {
     padding: 10px;
 }
 
-.cardContent:hover{
+.cardContent:hover {
     transform: scale(1.08);
 }
 
@@ -252,15 +253,20 @@ h1.titleText {
     cursor: pointer;
 }
 
-.cardContent div:hover{
+.cardContent div:hover {
     color: red;
-    
+
 }
 
 
 /* popup */
 
-#drama.active, #dance.active, #music.active, #anc.active, #blur1.active, #blur2.active{
+#drama.active,
+#dance.active,
+#music.active,
+#anc.active,
+#blur1.active,
+#blur2.active {
     filter: blur(20px);
     user-select: none;
     pointer-events: none;
@@ -351,18 +357,18 @@ h1.titleText {
 }
 
 @media (max-width: 950px) {
-    main{
+    main {
         display: flex;
         flex-direction: column;
     }
-    
-    .leftContainer{
+
+    .leftContainer {
         height: 100vh;
         width: 100%;
         position: relative;
     }
-    
-    .rightContainer{
+
+    .rightContainer {
         width: 100%;
         margin-left: 0%;
         padding: 10px;
@@ -370,22 +376,26 @@ h1.titleText {
 
     h1.titleText {
         position: absolute;
-        top: 8vh;
+        top: 6vh;
         left: 0;
         width: 100%;
         text-align: center;
     }
 
-    .leftContainer ul li{
+    .leftContainer ul {
+        top: -8vh;
+    }
+
+    .leftContainer ul li {
         font-size: 22px;
         margin: 20px 2px;
     }
 
-    .leftContainer ul a li.active{
+    .leftContainer ul a li.active {
         font-size: 24px;
     }
 
-    .modTitle{
+    .modTitle {
         width: 100%;
         text-align: center;
         font-size: 45px;
@@ -395,35 +405,47 @@ h1.titleText {
         margin-bottom: 10px;
     }
 
-    .m4nav{
+    .m4nav {
         margin-bottom: 45px;
     }
-    
+
     .card .cardContent {
         margin: 20px 25px 30px 25px;
         height: 390px;
         width: 280px;
     }
+
+    .logos {
+        bottom: 40px;
+    }
+
+    .coepLogo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .impressLogo {
+        width: 127px;
+        height: 155px;
+    }
+
 }
 
 /* scrollbar */
 
-body::-webkit-scrollbar-track
-{
-	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
 }
 
-body::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #F5F5F5;
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
 }
 
-body::-webkit-scrollbar-thumb
-{
-	background-color: #2b0606;
-	border: 1px solid #210e0e;
+body::-webkit-scrollbar-thumb {
+    background-color: #2b0606;
+    border: 1px solid #210e0e;
 }
 
 /* footer */
@@ -445,7 +467,7 @@ body::-webkit-scrollbar-thumb
     margin-bottom: 50px;
 }
 
-.footSec1{
+.footSec1 {
     margin-right: 20px;
 }
 
@@ -470,7 +492,7 @@ body::-webkit-scrollbar-thumb
     text-decoration: underline;
 }
 
-.footSec3{
+.footSec3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,13 +500,13 @@ body::-webkit-scrollbar-thumb
     margin-bottom: 15px;
 }
 
-p.lastLine{
+p.lastLine {
     color: #6a6767;
     width: 95%;
     text-align: center;
 }
 
-.footTitle3{
+.footTitle3 {
     margin-right: 40px;
 }
 
@@ -493,7 +515,7 @@ p.lastLine{
     margin: 2px 5px;
 }
 
-.footBody3 img:hover{
+.footBody3 img:hover {
     transform: scale(1.1);
 }
 
@@ -538,7 +560,7 @@ p.lastLine{
         width: 45%;
     }
 
-    .footSec1{
+    .footSec1 {
         margin-right: 0px;
     }
 
@@ -567,8 +589,10 @@ p.lastLine{
         font-size: 18px;
     }
 
-    .footTitle3{
+    .footTitle3 {
         margin-right: 0px;
+        width: 100%;
+        text-align: center;
     }
 
     .footSec1Container {
@@ -586,6 +610,6 @@ p.lastLine{
 }
 
 /* disabling scrolling when popup is visible */
-body.popupActive{
+body.popupActive {
     overflow: hidden;
 }
