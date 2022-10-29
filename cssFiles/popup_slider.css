@@ -124,7 +124,7 @@
 
 .prev,
 .next {
-    width: 35px;
+    width: 30px;
     cursor: pointer;
     opacity: 0.4;
     transition: all 0.5s ease;
@@ -235,7 +235,7 @@
 
     .prev,
     .next {
-        width: 32px;
+        width: 28px;
     }
 
     .trail {
@@ -252,7 +252,7 @@
 @media (max-width: 900px) {
     #popup {
         width: 95vw;
-        height: 95vh;
+        height: 90vh;
     }
 
     .slider .box {
@@ -266,7 +266,7 @@
     }
 
     .slider .illustration div {
-        height: 15rem;
+        height: 10rem;
         width: 14rem;
     }
 
@@ -284,7 +284,7 @@
 @media (max-width: 700px) {
     .slider .illustration {
         position: relative;
-        top: 70px;
+        top: 0px;
     }
 
 
@@ -296,7 +296,7 @@
 @media (max-width: 600px) {
     .slider .illustration {
         position: relative;
-        top: -25px;
+        top: -85px;
     }
 
     .EveName {
@@ -310,7 +310,7 @@
 
     .prev,
     .next {
-        width: 28px;
+        width: 25px;
     }
 
     .trail {
@@ -359,12 +359,12 @@
 @media (max-width: 520px) {
     .slider .illustration {
         position: relative;
-        top: -40px;
+        top: -70px;
     }
 
     .prev,
     .next {
-        width: 25px;
+        width: 23px;
     }
 
     .slider .box .details {
@@ -388,13 +388,13 @@
 @media (max-width: 450px) {
     .slider .illustration {
         position: relative;
-        top: -30px;
+        top: -50px;
     }
 }
 
 @media (max-width: 400px) {
     .slider .illustration {
         position: relative;
-        top: 15px;
+        top: -30px;
     }
 }
