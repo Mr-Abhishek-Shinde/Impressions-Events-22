@@ -162,7 +162,7 @@ function togglePopup(id) {
             }
             break;
         default:
-            EveName.innerHTML = "Event Name";
+            EveName.innerHTML = "Register Now...";
             break;
     }
 }

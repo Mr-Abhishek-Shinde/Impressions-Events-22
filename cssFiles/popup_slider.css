@@ -368,6 +368,10 @@
         top: 0px;
     }
 
+    .slider .illustration div{
+        height: 12rem;
+    }
+
     .prev,
     .next {
         width: 23px;
